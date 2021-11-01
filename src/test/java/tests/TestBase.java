@@ -18,7 +18,7 @@ public class TestBase {
     static void setup() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
-        Configuration.timeout = 15000;
+        Configuration.timeout = 20000;
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability("enableVNC", true);
